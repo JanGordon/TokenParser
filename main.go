@@ -60,17 +60,17 @@ func (p *Parser) Parse(text string) []*Token {
 	return outTokens
 }
 
-func main() {
-	p := &Parser{[]*Token{
-		{
-			"!!",
-			">!",
-			nil,
-			"",
-			0,
-		},
-	}}
-	for _, r := range p.Parse("hello !! actually bye planet !! a child >! >!  world") {
-		fmt.Println(r, r.Children[0])
-	}
-}
+// func main() {
+// 	p := &Parser{[]*Token{
+// 		{
+// 			"!!",
+// 			">!",
+// 			nil,
+// 			"",
+// 			0,
+// 		},
+// 	}}
+// 	for _, r := range p.Parse("hello !! actually bye planet !! a child >! >!  world") {
+// 		fmt.Println(r, r.Children[0])
+// 	}
+// }
